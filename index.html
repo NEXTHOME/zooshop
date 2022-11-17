@@ -144,7 +144,11 @@
             </div>
             
                 </article>
+                
             </section>
+            <div class="button">
+                <a class="button">srulad</a>
+            </div>
 <h2>ვიდეოები</h2>
 <section class="center catalog">
     <article>
@@ -201,6 +205,21 @@
                     <p>Your pets will love our store!</p>
                
             </article>
+           
+            <!--Cursor Part-->
+            <div class="cursor-outer"></div>
+            <div class="cursor-inner"></div>
+            <script>
+                const cursor = document.querySelector(".cursor-inner");
+                const cursor2 = document.querySelector(".cursor-outer");
+                document.addEventListener("mousemove", e=>{
+                    cursor.style.top = e.pageY + "px";
+                    cursor.style.left = e.pageX + "px";
+         
+                    cursor2.style.top = e.pageY + "px";
+                    cursor2.style.left = e.pageX + "px";
+                })
+            </script>
         </main>
         <footer>
              <p>Email:</p>
@@ -233,6 +252,9 @@
               slides[slideIndex-1].style.display = "block";  
               dots[slideIndex-1].className += " active";
             }
+            </script>
+            <script>
+
             </script>
     </body>
 </html>
